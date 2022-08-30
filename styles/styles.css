@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* HEADER */
+.page-wrapper{
+    max-width: 1440px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+.item-wrapper,
+.text-wrapper{
+    margin: 0 15px;
+}
+.text-wrapper>a{
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    font-size: 24px;
+}
+
+
+/* POPUP */
+.nav-list{
+    position: relative;
+}
+.popup-input{
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.popup-menu--wrapper{
+    display: none;
+}
+/* checked POPUP */
+.popup-input:checked + .popup-menu--wrapper{
+    display: block;
+    border: 1px solid lightgray;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 30px;
+    margin-top: 10px;
+    height: 400px;
+    overflow-y: overlay;
+}
+.popup-menu{
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(3,min-content);
+    grid-auto-flow: row;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+.popup-menu.more{
+    display: none;
+}
+.item-image img{
+    width: 60px;
+}
+
+/* more checked */
+.more-section{
+    display: flex;
+    justify-content: center;
+}
+.more-label{
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.more-input{
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.more-input:checked ~ .popup-menu.more{
+    display: grid;
+}
+.more-input:checked ~ .more-label{
+    display: none;
+}
+.popup-menu.more{
+    border-top: 1px solid lightgray;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.menu-item.link{
+    position: relative;
+    width: 60px;
+    height: 30px;
+}
+.link-even--more{
+    position: absolute;
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    z-index: 1;
+    width: 216px;
+}
