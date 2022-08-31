@@ -10,18 +10,18 @@ html, body, div, span, a, img, footer, header,nav {
     padding: 0;
     border: 0;
 }
-:focus{
+:focus {
     outline: 0;
 }
-svg{
+svg {
     fill: #68838b;
 }
 
 /* HEADER */
-.header{
+.header {
     background: linear-gradient(180deg,rgba(191, 239, 255, 0.3) , transparent);
 }
-.main-nav{
+.main-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,39 +30,39 @@ svg{
     margin: 0 auto;
     padding: 0 10px;
 }
-.logo-wrapper{
+.logo-wrapper {
     display: flex;
     align-items: center;
     margin: 0 15px;
 }
-.logo-img{
+.logo-img {
     fill: #68838b;
 }
-.logo-title{
+.logo-title {
     font-size: 54px;
     font-family: Antic, Arial, sans-serif;
     margin-left: 20px;
     color: #68838b;
 }
-.nav-list{
+.nav-list {
     display: flex;
     list-style-type: none;
     align-items: center;
     justify-content: flex-end;
 }
-.item-wrapper{
+.item-wrapper {
     margin: 0 15px;
 }
-.popup-label{
+.popup-label {
     cursor: pointer;
     display: block;
 }
 
 /* POPUP */
-.nav-list{
+.nav-list {
     position: relative;
 }
-.popup-input{
+.popup-input {
     -webkit-appearance: none;
     appearance: none;
     position: absolute;
@@ -70,8 +70,9 @@ svg{
 .popup-menu--wrapper{
     display: none;
 }
+
 /* checked POPUP */
-.popup-input:checked ~ .popup-menu--wrapper{
+.popup-input:checked ~ .popup-menu--wrapper {
     display: block;
     border: 1px solid lightgray;
     border-radius: 8px;
@@ -94,7 +95,7 @@ svg{
     background-color: #68838b;
     border-radius: 10px;
 }
-.popup-menu{
+.popup-menu {
     display: grid;
     grid-template: repeat(2,1fr) / repeat(3,70px);
     grid-auto-flow: row;
@@ -102,59 +103,59 @@ svg{
     justify-items: center;
     align-items: center;
 }
-.popup-item--card{
+.popup-item--card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-decoration: none;
 }
-.card-subtitle{
+.card-subtitle {
     padding-top: 5px;
     color: #68838b;
     font-family: Arial, sans-serif;
 }
-.more-menu--wrapper{
+.more-menu--wrapper {
     display: none;
 }
-.card-image img{
+.card-image img {
     width: 60px;
 }
 
 /* more checked */
-.more-section{
+.more-section {
     display: flex;
     justify-content: center;
 }
-.more-label{
+.more-label {
     font-family: Antic, Arial, sans-serif;
     font-size: 24px;
     margin-top: 30px;
     color: #68838b;
     cursor: pointer;
 }
-.more-input{
+.more-input {
     -webkit-appearance: none;
     appearance: none;
     position: absolute;
 }
-.more-input:checked ~ .more-menu--wrapper{
+.more-input:checked ~ .more-menu--wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.more-input:checked ~ .more-label{
+.more-input:checked ~ .more-label {
     display: none;
 }
-.popup-menu.more{
+.popup-menu.more {
     border-top: 1px solid #68838b;
     margin-top: 20px;
     padding-top: 20px;
 }
-.more-link--wrapper{
+.more-link--wrapper {
     margin-top: 30px;
 }
-.link-even--more{
+.link-even--more {
     text-decoration: none;
     font-family: Antic, Arial, sans-serif;
     font-size: 24px;
@@ -162,7 +163,6 @@ svg{
 }
 
 /* Interaction */
-
 .popup-menu--item:focus-within .card-image>svg,
 .popup-menu--item:hover .card-image>svg,
 .item-wrapper:hover svg.nav-svg,
@@ -174,12 +174,12 @@ svg{
 .more-link--wrapper:focus-within .link-even--more,
 .popup-menu--item:hover .card-subtitle,
 .more-section:hover .more-label,
-.more-link--wrapper:hover .link-even--more{
+.more-link--wrapper:hover .link-even--more {
     color: #f08080;
 }
 
 /* Adaptive attempt */
-@media (max-width:840px){
+@media (max-width:840px) {
     .logo-title{
         font-size: 40px;
     }
@@ -192,3 +192,4 @@ svg{
         display: none;
     }
 }
+
