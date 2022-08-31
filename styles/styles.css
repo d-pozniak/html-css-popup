@@ -177,7 +177,13 @@ svg {
 .more-link--wrapper:hover .link-even--more {
     color: #f08080;
 }
-
+.popup-menu--item:focus-within .popup-item--card,
+.more-section:focus-within .more-label,
+.more-link--wrapper:focus-within .link-even--more,
+.item-wrapper:focus-within svg.nav-svg{
+    outline: 2px solid #f08080;
+    border-radius: 8px;
+}
 /* Adaptive attempt */
 @media (max-width:840px) {
     .logo-title{
