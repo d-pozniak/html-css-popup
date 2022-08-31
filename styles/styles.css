@@ -81,7 +81,7 @@ svg {
     right: 0;
     padding: 30px;
     margin: 10px 15px;
-    overflow-y: overlay;
+    overflow-y: scroll;
     height: 516px;
 }
 .popup-menu--wrapper::-webkit-scrollbar-track {
@@ -192,4 +192,3 @@ svg {
         display: none;
     }
 }
-
