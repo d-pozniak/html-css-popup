@@ -177,9 +177,6 @@ body {
 }
 
 /* Interaction */
-.logo-link--wrapper:hover .logo-title {
-    color: #5f9ea0;
-}
 .popup-menu--item:focus-within .card-image > svg,
 .popup-menu--item:hover .card-image > svg,
 .item-wrapper:hover svg.nav-svg,
